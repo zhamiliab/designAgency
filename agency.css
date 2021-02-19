@@ -1,0 +1,147 @@
+body{
+margin: 0;
+padding: 0;
+font-size: 18px;
+
+}
+/*header*/
+header{
+background-image: url( https://images.unsplash.com/photo-1527427337751-fdca2f128ce5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+background-size: cover;
+padding: 60px 10%;
+color: white;
+box-sizing: border-box;
+text-align: center;
+background-position: center;
+height: 60vh;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+
+}
+.button{
+border: solid 2px white;
+padding: 20px;
+margin: 25px;
+text-decoration: none;
+color: white;
+}
+
+.button:hover{
+    background-color: white;
+    color: black;
+}
+/*section a*/
+#section-a{
+    background-color: rgb(248, 247, 244);
+    text-align: center;
+   /* display:flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items:stretch;
+    text-align: center;
+    padding: 5%;*/
+    padding: 60px 10%;
+ }                 /* tip from Tuba- columns: 2;
+                    column-gap: 2rem;*/
+ 
+
+
+
+#section-b{
+    background-color: rgb(89, 92, 92);
+    display: flex;
+    display:inline-block;
+   justify-content: space-around;
+    flex-direction: column;   
+    text-align: center;
+    padding: 5%;  
+
+}
+
+.box-1, .box-2, .box-3{
+    display:inline-block;
+    display: flex;
+    background-color: white;
+    width: 30%;
+    display:inline-block;
+    margin: 0 1%;
+    padding:auto;
+}
+#section-b img{
+    width: 100%;
+}
+
+#section-c{    
+    background-color: whitesmoke;
+    display:flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items:stretch;
+    text-align: center;
+    padding:3%;
+}
+
+#section-d{    
+    display:flex;    
+    height: 300px;           
+    }
+#section-d .left{
+    background-color: DodgerBlue;
+    flex: 50%;
+    text-align: center;
+    padding: 5%;    
+    color: white;
+  width: 100%;
+ 
+}
+
+
+#section-d .right{
+    background-color:rgb(89, 92, 92);
+    flex: 50%;
+    text-align: center;
+    padding: 5%;    
+    color: white;
+  
+ 
+}
+footer{
+    background-color: black;
+    color: white;
+    display:flex;
+    justify-content:space-around;
+    flex-direction:row;
+    align-items:stretch;
+    text-align: center;
+    padding: 45px;
+
+}
+.company{
+    text-decoration: none;
+    color: dodgerblue;
+
+}
+  
+  @media screen and (max-width: 768px){
+   #section-b, #section-d{
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    padding: 0;
+}
+   .box-1, .box-2, .box-3{
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+    footer{
+    /*display: flex;
+    flex-direction: column; */
+    display:inline-flex;
+    width: 100%;
+    padding: 40px 0;
+  
+}
+}
